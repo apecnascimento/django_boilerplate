@@ -10,6 +10,7 @@ django = "*"
 djangorestframework = "*"
 celery = "*"
 django-celery-beat = "*"
+django-rest-swagger = "*"
 
 [requires]
 python_version = "3.6"
