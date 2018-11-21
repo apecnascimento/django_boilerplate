@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 djangorestframework = "*"
 celery = "*"
+django-celery-beat = "*"
 
 [requires]
 python_version = "3.6"
