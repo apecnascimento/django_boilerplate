@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'django_celery_beat',
 ]
 
+if DEBUG:
+    # Add development environment apps
+    INSTALLED_APPS.append('django_extensions')
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
