@@ -1,4 +1,5 @@
 {
-    "project_slung": "project_name"
-    
+    "project_slung": "project_name",
+    "LANGUAGE_CODE": "pt-br",
+    "TIME_ZONE": "America/Fortaleza"    
 }
