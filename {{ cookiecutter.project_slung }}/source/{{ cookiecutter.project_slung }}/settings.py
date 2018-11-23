@@ -126,5 +126,6 @@ STATIC_URL = '/static/'
 # Celery config
 CELERY_BROKER_URL = os.environ['CELERY_BROKER_URL']
 CELERY_TIMEZONE = TIME_ZONE
+CELERY_TASK_SERIALIZER = 'json'
 CELERY_BEAT_SCHEDULE = 'django_celery_beat.schedulers:DatabaseScheduler'
 
