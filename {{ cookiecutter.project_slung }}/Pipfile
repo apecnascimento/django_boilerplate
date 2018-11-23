@@ -6,13 +6,13 @@ verify_ssl = true
 [dev-packages]
 django-extensions = "*"
 
-
 [packages]
 django = "*"
 djangorestframework = "*"
 celery = "*"
 django-celery-beat = "*"
 django-rest-swagger = "*"
+python-decouple = "*"
 
 [requires]
 python_version = "3.6"
