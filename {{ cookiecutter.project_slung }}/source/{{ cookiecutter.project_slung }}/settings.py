@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django_celery_beat',
 ]
 
+
 if DEBUG:
     # Add development environment apps
     INSTALLED_APPS.append('django_extensions')
@@ -72,9 +73,15 @@ WSGI_APPLICATION = '{{ cookiecutter.project_slung }}.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': Config('DATABASE_NAME'),
+        'USER': Config('DATABASE_USER'),
+        'PASSWORD': Config('DATABASE_PASSWORD'),
+        'HOST': Config('DATABASE_HOST'),
+        # 'OPTIONS': {
+        #     'sslmode': 'require',
+        # },
+    },
 }
 
 
