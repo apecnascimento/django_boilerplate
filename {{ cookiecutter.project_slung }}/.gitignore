@@ -11,7 +11,8 @@ requiremets.txt
 *.pot
 *.pyc
 __pycache__/
-{{ cookiecutter.project_slung }}/settings/local.py
+source/{{ cookiecutter.project_slung }}/settings/local.py
+source/
 *db.sqlite3
 media
 
