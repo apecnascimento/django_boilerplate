@@ -5,13 +5,13 @@
 
 # Pipenv
 *Pipfile.lock
-
+requiremets.txt
 ### Django ###
 *.log
 *.pot
 *.pyc
 __pycache__/
-local_settings.py
+{{ cookiecutter.project_slung }}/settings/local.py
 *db.sqlite3
 media
 
