@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = '{{ cookiecotter.LANGUAGE_CODE }}'
+LANGUAGE_CODE = '{{ cookiecutter.LANGUAGE_CODE }}'
 
 TIME_ZONE = '{{cookiecutter.TIME_ZONE}}'
 
